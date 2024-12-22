@@ -1,0 +1,102 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #264653, #2a9d8f); /* Teal and Dark Green */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Center Alignment for Form Container */
+.form-container {
+    background: #f4a261; /* Orange */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Form Heading */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #264653;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Label Styling */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #264653;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Input Fields, Select, and Textarea Styling */
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #264653;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #333;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus Effect */
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: #2a9d8f;
+    outline: none;
+    box-shadow: 0 0 4px rgba(42, 157, 143, 0.5);
+}
+
+/* Textarea */
+.form-group textarea {
+    resize: none;
+    height: 40px;
+    line-height: 1.2rem;
+}
+
+/* Submit Button */
+.form-btn {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background: #264653;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Button Hover Effect */
+.form-btn:hover {
+    background: #2a9d8f;
+}
+
+/* Small Screens/Responsive Styling */
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 1rem;
+        max-width: 90%;
+    }
+
+    .form-btn {
+        font-size: 0.85rem;
+    }
+}
